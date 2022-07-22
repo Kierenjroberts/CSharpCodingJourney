@@ -27,14 +27,7 @@ for (var i = 1; i < numbersList.Count; i++)
     }
 }
 
-if (consecutive == true)
-{
-    Console.WriteLine("Is consecutive.");
-}
-else
-{
-    Console.WriteLine("Is not consecutive.");
-}
+Console.WriteLine(consecutive == true ? "Is consecutive." : "Is not consecutive.");
 
 foreach (var i in numbersList)
 {
