@@ -1,4 +1,7 @@
-﻿var path = @"E:\Documents\ExerciseText.txt";
+﻿// Write a program that reads a text file and displays the longest word in the file.
+
+
+const string path = @"E:\Documents\ExerciseText.txt";
 
 var textFromFile = File.ReadAllText(path);
 Console.WriteLine(textFromFile);
