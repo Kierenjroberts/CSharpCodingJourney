@@ -11,7 +11,6 @@
 
 var speedLimit = 0;
 var speed = 0;
-var demeritPoints = 0;
 
 Console.WriteLine("What is the speed limit? \n");
 speedLimit = Int32.Parse(Console.ReadLine());
@@ -25,7 +24,7 @@ if (speedLimit > speed)
 }
 else
 {
-    demeritPoints = (speed - speedLimit) / 5;
+    var demeritPoints = (speed - speedLimit) / 5;
     Console.WriteLine("Your demerit points amount: {0}", demeritPoints);
     if (demeritPoints > 12)
     {

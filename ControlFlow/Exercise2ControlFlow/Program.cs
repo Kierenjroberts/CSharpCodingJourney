@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.Design;
+﻿/*  Write a program which takes two numbers from the console and displays the maximum of the two. */
 
 var number1 = 0;
 var number2 = 0;
