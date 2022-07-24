@@ -12,7 +12,6 @@ using System.Diagnostics;
 using Exercise1;
 
 var stopwatch = new StopWatch();
-var timeElapsed = new TimeSpan();
 var continueStopWatch = true;
 
 do
@@ -36,7 +35,7 @@ do
         break;
     }
 
-    timeElapsed = stopwatch.StopAndCalculateDuration(startTime);
+    var timeElapsed = stopwatch.StopAndCalculateDuration(startTime);
 
     Console.WriteLine(timeElapsed);
 
