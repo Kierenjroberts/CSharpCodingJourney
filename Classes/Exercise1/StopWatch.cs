@@ -31,6 +31,7 @@ namespace Exercise1
 
             if (String.IsNullOrWhiteSpace(endWatch))
             {
+                endTime = DateTime.Now;
                 duration = endTime - initialTime;
             }
 
