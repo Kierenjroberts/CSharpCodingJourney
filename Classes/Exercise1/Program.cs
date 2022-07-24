@@ -40,8 +40,6 @@ do
 
     Console.WriteLine(timeElapsed);
 
-
-
 } while (continueStopWatch);
 
 
