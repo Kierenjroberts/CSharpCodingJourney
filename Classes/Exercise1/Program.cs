@@ -13,14 +13,35 @@ using Exercise1;
 
 var stopwatch = new StopWatch();
 var timeElapsed = new TimeSpan();
+var continueStopWatch = true;
 
-Console.WriteLine("Press enter to start the stopwatch");
-stopwatch.initialiseWatch = Console.ReadLine();
+do
+{
+    Console.WriteLine("Press enter to start the stopwatch, enter any key to terminate");
+    stopwatch.initialiseWatch = Console.ReadLine();
 
-var startTime = stopwatch.Start();
+    if (!String.IsNullOrWhiteSpace(stopwatch.initialiseWatch))
+    {
+        continueStopWatch = false;
+        break;
+    }
 
-Console.WriteLine("Press enter to stop the stopwatch");
-stopwatch.endWatch = Console.ReadLine();
-timeElapsed = stopwatch.StopAndCalculateDuration(startTime);
+    var startTime = stopwatch.Start();
 
-Console.WriteLine(timeElapsed);
+    Console.WriteLine("Press enter to stop the stopwatch, enter any key to terminate");
+    stopwatch.endWatch = Console.ReadLine();
+    if (!String.IsNullOrWhiteSpace(stopwatch.endWatch))
+    {
+        continueStopWatch = false;
+        break;
+    }
+
+    timeElapsed = stopwatch.StopAndCalculateDuration(startTime);
+
+    Console.WriteLine(timeElapsed);
+
+
+
+} while (continueStopWatch);
+
+
