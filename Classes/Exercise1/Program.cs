@@ -17,9 +17,9 @@ var continueStopWatch = true;
 do
 {
     Console.WriteLine("Press enter to start the stopwatch, enter any key to terminate");
-    stopwatch.initialiseWatch = Console.ReadLine();
+    stopwatch.beginningWatch = Console.ReadLine();
 
-    if (!String.IsNullOrWhiteSpace(stopwatch.initialiseWatch))
+    if (!String.IsNullOrWhiteSpace(stopwatch.beginningWatch))
     {
         continueStopWatch = false;
         break;
@@ -28,8 +28,8 @@ do
     var startTime = stopwatch.Start();
 
     Console.WriteLine("Press enter to stop the stopwatch, enter any key to terminate");
-    stopwatch.endWatch = Console.ReadLine();
-    if (!String.IsNullOrWhiteSpace(stopwatch.endWatch))
+    stopwatch.endingWatch = Console.ReadLine();
+    if (!String.IsNullOrWhiteSpace(stopwatch.endingWatch))
     {
         continueStopWatch = false;
         break;

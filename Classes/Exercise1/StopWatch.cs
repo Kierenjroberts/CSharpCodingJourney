@@ -8,14 +8,14 @@ namespace Exercise1
 {
     public class StopWatch
     {
-        public string initialiseWatch;
-        public string endWatch;
+        public string beginningWatch;
+        public string endingWatch;
 
         public DateTime Start()
         {
             var startTime = new DateTime();
 
-            if (String.IsNullOrWhiteSpace(initialiseWatch))
+            if (String.IsNullOrWhiteSpace(beginningWatch))
             {
                 startTime = DateTime.Now;
             }
@@ -29,7 +29,7 @@ namespace Exercise1
             var initialTime = startTime;
             var duration = new TimeSpan();
 
-            if (String.IsNullOrWhiteSpace(endWatch))
+            if (String.IsNullOrWhiteSpace(endingWatch))
             {
                 endTime = DateTime.Now;
                 duration = endTime - initialTime;
