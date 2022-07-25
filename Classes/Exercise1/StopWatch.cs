@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Exercise1
 {
-    public class StopWatch
+    internal class StopWatch
     {
         public string beginningWatch;
         public string endingWatch;
